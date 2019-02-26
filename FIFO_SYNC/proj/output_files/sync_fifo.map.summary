@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Feb 24 11:30:37 2019
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : sync_fifo
+Top-level Entity Name : sync_fifo
+Family : Cyclone IV E
+Total logic elements : 50
+    Total combinational functions : 50
+    Dedicated logic registers : 27
+Total registers : 27
+Total pins : 40
+Total virtual pins : 0
+Total memory bits : 8,192
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

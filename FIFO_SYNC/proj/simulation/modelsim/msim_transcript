@@ -1,0 +1,122 @@
+# Reading D:/major_soft/soft/quartus13/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do sync_fifo_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\major_soft\soft\quartus13\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\major_soft\soft\quartus13\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/rtl {L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/rtl/sync_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	sync_fifo
+# vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/ip {L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/ip/ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# 
+# vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../tb {L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../tb/sync_fifo_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sync_fifo_tb
+# 
+# Top level modules:
+# 	sync_fifo_tb
+# vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../rtl {L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../rtl/sync_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	sync_fifo
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  sync_fifo_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps sync_fifo_tb 
+# Loading work.sync_fifo_tb
+# Loading work.sync_fifo
+# Loading work.ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module sync_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../tb/sync_fifo_tb.v line 49
+# Simulation Breakpoint: Break in Module sync_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../tb/sync_fifo_tb.v line 49
+# MACRO ./sync_fifo_run_msim_rtl_verilog.do PAUSED at line 19
+add wave -position insertpoint  \
+sim:/sync_fifo_tb/sync_fifo_u1/rst_n \
+sim:/sync_fifo_tb/sync_fifo_u1/clk \
+sim:/sync_fifo_tb/sync_fifo_u1/fifo_wr_en \
+sim:/sync_fifo_tb/sync_fifo_u1/fifo_wr_data \
+sim:/sync_fifo_tb/sync_fifo_u1/fifo_rd_en \
+sim:/sync_fifo_tb/sync_fifo_u1/fifo_full \
+sim:/sync_fifo_tb/sync_fifo_u1/fifo_rd_data \
+sim:/sync_fifo_tb/sync_fifo_u1/fifo_empty \
+sim:/sync_fifo_tb/sync_fifo_u1/fifo_wr_err \
+sim:/sync_fifo_tb/sync_fifo_u1/fifo_rd_err \
+sim:/sync_fifo_tb/sync_fifo_u1/rdaddress \
+sim:/sync_fifo_tb/sync_fifo_u1/wraddress \
+sim:/sync_fifo_tb/sync_fifo_u1/data_cnt
+restart
+run -all
+# Break in Module sync_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../tb/sync_fifo_tb.v line 49
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/rtl/sync_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	sync_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/tb/sync_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sync_fifo_tb
+# 
+# Top level modules:
+# 	sync_fifo_tb
+restart
+# Loading work.sync_fifo_tb
+# Loading work.sync_fifo
+# Loading work.ram
+run -all
+# Break in Module sync_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/tb/sync_fifo_tb.v line 49
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/rtl/sync_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	sync_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/tb/sync_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sync_fifo_tb
+# 
+# Top level modules:
+# 	sync_fifo_tb
+restart
+# Loading work.sync_fifo_tb
+# Loading work.sync_fifo
+# Loading work.ram
+run -all
+# Break in Module sync_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_SYNC/tb/sync_fifo_tb.v line 49

@@ -1,0 +1,292 @@
+# Reading D:/major_soft/soft/quartus13/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do async_fifo_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\major_soft\soft\quartus13\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\major_soft\soft\quartus13\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl {L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+# vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip {L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# 
+# vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb {L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb/async_fifo_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+# vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl {L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl/async_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  async_fifo_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps async_fifo_tb 
+# Loading work.async_fifo_tb
+# Loading work.async_fifo
+# Loading work.ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: async_fifo_tb.async_fifo_u0.ram.altsyncram_component
+add wave -position insertpoint  \
+sim:/async_fifo_tb/async_fifo_u0/rst_n \
+sim:/async_fifo_tb/async_fifo_u0/fifo_wr_en \
+sim:/async_fifo_tb/async_fifo_u0/fifo_wr_data \
+sim:/async_fifo_tb/async_fifo_u0/fifo_rd_en \
+sim:/async_fifo_tb/async_fifo_u0/fifo_rd_clk \
+sim:/async_fifo_tb/async_fifo_u0/fifo_wr_clk \
+sim:/async_fifo_tb/async_fifo_u0/r_fifo_full \
+sim:/async_fifo_tb/async_fifo_u0/fifo_rd_data \
+sim:/async_fifo_tb/async_fifo_u0/r_fifo_empty \
+sim:/async_fifo_tb/async_fifo_u0/rdaddress \
+sim:/async_fifo_tb/async_fifo_u0/wraddress \
+sim:/async_fifo_tb/async_fifo_u0/gray_rdaddress \
+sim:/async_fifo_tb/async_fifo_u0/gray_wraddress \
+sim:/async_fifo_tb/async_fifo_u0/sync_w2r_r1 \
+sim:/async_fifo_tb/async_fifo_u0/sync_w2r_r2 \
+sim:/async_fifo_tb/async_fifo_u0/sync_r2w_r1 \
+sim:/async_fifo_tb/async_fifo_u0/sync_r2w_r2
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+restart
+# Loading work.async_fifo_tb
+# Loading work.async_fifo
+# Loading work.ram
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: async_fifo_tb.async_fifo_u0.ram.altsyncram_component
+# Break in Module async_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v line 54
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+restart
+# Loading work.async_fifo_tb
+# Loading work.async_fifo
+# Loading work.ram
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: async_fifo_tb.async_fifo_u0.ram.altsyncram_component
+# Break in Module async_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v line 54
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+restart
+# Loading work.async_fifo_tb
+# Loading work.async_fifo
+# Loading work.ram
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: async_fifo_tb.async_fifo_u0.ram.altsyncram_component
+# Break in Module async_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v line 54
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+restart
+# Loading work.async_fifo_tb
+# Loading work.async_fifo
+# Loading work.ram
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: async_fifo_tb.async_fifo_u0.ram.altsyncram_component
+# Break in Module async_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v line 54
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+restart
+# Loading work.async_fifo_tb
+# Loading work.async_fifo
+# Loading work.ram
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: async_fifo_tb.async_fifo_u0.ram.altsyncram_component
+# Break in Module async_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v line 54
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+restart
+# Loading work.async_fifo_tb
+# Loading work.async_fifo
+# Loading work.ram
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: async_fifo_tb.async_fifo_u0.ram.altsyncram_component
+# Break in Module async_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v line 54
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+vlog -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip -O0 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+restart
+# Loading work.async_fifo_tb
+# Loading work.async_fifo
+# Loading work.ram
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: async_fifo_tb.async_fifo_u0.ram.altsyncram_component
+# Break in Module async_fifo_tb at L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v line 54

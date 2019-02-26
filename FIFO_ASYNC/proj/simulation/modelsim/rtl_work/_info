@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dL:\FPWG_WORK\FPGA_FIFO\FIFO_ASYNC\proj\simulation\modelsim
+vasync_fifo
+I8F]_gU6_LGZGj`fiiL:IO0
+V@Pg4G[m`f453]_naoZzJn0
+Z1 dL:\FPWG_WORK\FPGA_FIFO\FIFO_ASYNC\proj\simulation\modelsim
+w1551145863
+8L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+FL:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v
+L0 3
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 RG4ncL@Pk?>IQo;o[lIMN2
+!s85 0
+!s108 1551145872.257000
+!s107 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl|-O0|L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/rtl/async_fifo.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../rtl -O0
+vasync_fifo_tb
+ISZ1>:jLejH^B47ZPzS`g51
+VQzGN:PEfEY<zGF;HK?^W^0
+R1
+w1551145354
+8L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+FL:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v
+L0 2
+R2
+r1
+31
+R3
+!i10b 1
+!s100 0:RlBM:o`5^]@jDj>?m^O0
+!s85 0
+!s108 1551145872.426000
+!s107 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb|-O0|L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/tb/async_fifo_tb.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/proj/../tb -O0
+vram
+!i10b 1
+!s100 8aGHANCAYbGZX?`bEzlzY3
+IzCH:Sk__DzJRaZ>gDh]4l1
+V4[eh9o1icjGW47o?6?Il;3
+R1
+w1551000180
+8L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+FL:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v
+L0 39
+R2
+r1
+!s85 0
+31
+!s108 1551145872.649000
+!s107 L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip|-O0|L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip/ram.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+L:/FPWG_WORK/FPGA_FIFO/FIFO_ASYNC/ip -O0
